@@ -1,0 +1,13 @@
+basic.showIcon(IconNames.Happy)
+I2C_LCD1602.i2cLcdInit(39)
+I2C_LCD1602.i2cLcdBacklightOff()
+basic.pause(500)
+I2C_LCD1602.i2cLcdBacklightOn()
+I2C_LCD1602.i2cLcdShowString("Hello! emakefun", 1, 0)
+I2C_LCD1602.i2cLcdShowString("2020 2 2", 8, 1)
+I2C_LCD1602.i2cLcdOff()
+basic.pause(500)
+I2C_LCD1602.i2cLcdOn()
+basic.forever(function () {
+    basic.pause(100)
+})
